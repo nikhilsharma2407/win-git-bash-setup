@@ -1,0 +1,52 @@
+{
+    "actions": 
+    [
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "clearBuffer"
+            },
+            "keys": "ctrl+k"
+        }
+    ],
+    "profiles": {
+        "defaults": {},
+        "list": [
+            {
+                "background": "#1E1E1E",
+                "colorScheme": "Campbell",
+                "commandline": "\"C:\\Program Files\\Git\\bin\\bash.exe\" --login -i",
+                "cursorShape": "bar",
+                "guid": "{33333333-3333-3333-3333-333333333333}",
+                "name": "Git Bash",
+                "startingDirectory": null,
+                "useAcrylic": true
+            }
+        ]
+    }
+}

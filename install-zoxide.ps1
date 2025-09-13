@@ -1,0 +1,1 @@
+ winget install ajeetdsouza.zoxide --source winget
