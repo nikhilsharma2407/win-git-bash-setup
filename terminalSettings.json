@@ -1,52 +1,75 @@
 {
-    "actions": 
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{33333333-3333-3333-3333-333333333333}",
+    "keybindings": 
     [
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "find",
+            "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "clearBuffer"
-            },
+            "id": "Terminal.ClearBuffer",
             "keys": "ctrl+k"
         }
     ],
-    "profiles": {
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
         "defaults": {},
-        "list": [
+        "list": 
+        [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell",
+                "startingDirectory": null
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
             {
                 "background": "#1E1E1E",
                 "colorScheme": "Campbell",
-                "commandline": "\"C:\\Program Files\\Git\\bin\\bash.exe\" --login -i",
+                "commandline": "\"C:\\Program Files\\Git\\bin\\bash.exe\" -i",
                 "cursorShape": "bar",
                 "guid": "{33333333-3333-3333-3333-333333333333}",
                 "name": "Git Bash",
-                "startingDirectory": null,
+                "opacity": 100,
+                "startingDirectory": "D:/gfg/current/batch-65",
                 "useAcrylic": true
             }
         ]
-    }
+    },
+    "schemes": [],
+    "themes": [],
+    "warning.confirmCloseAllTabs": false
 }
